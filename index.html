@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Rock, Paper, Scissors VanillaJS Project">
+  <meta name="keywords" content="HTML, CSS, JavaScript">
+  <meta name="author" content="Danton de Godoy Petri Lima">
+  <title>Rock, Paper, Scissors</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=MuseoModerno:wght@500&display=swap">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <button id="restart">Restart</button>
+  </header>
+  <main>
+    <h1 class="main-title">Choose your hand!</h1>
+    <section class="selections">
+      <button class="selection" data-selection="paper">✋</button>
+      <button class="selection" data-selection="scissors">✌️</button>
+      <button class="selection" data-selection="rock">✊</button>
+    </section>
+
+    <section class="versus-sign">X</section>
+
+    <section class="results">
+      <article>
+        <p class="result-score" data-your-score>0</p>
+        You
+      </article>
+      <article data-final-column>
+        <p class="result-score" data-computer-score>0</p>
+        Computer
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <address class="author">
+      <p>Made By </p>
+      <p><a rel="author" target="blank" href="https://www.linkedin.com/in/danton-de-godoy-petri-lima-824a716a/">Danton
+          de Godoy</a></p>
+      <p>
+        <time id="currentYear"></time>
+      </p>
+    </address>
+  </footer>
+  
+</body>
+</html>

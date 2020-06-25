@@ -1,0 +1,135 @@
+body {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(90deg, #a1c4fd 0%, #c2e9fb 100%);
+}
+
+body, body * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'MuseoModerno', cursive;
+}
+
+header {
+  height: auto;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  padding: 1rem 2rem;
+  background-color: rgba(255, 255, 255, .15);
+  backdrop-filter: blur(5px);
+  box-shadow: 0px 5px 15px 0px #666;
+  text-align: end;
+}
+
+@media only screen and (max-width: 600px) {
+  header {
+    padding: 1rem;
+  }
+}
+
+header > #restart {
+  padding: 0.5rem 1.5rem;
+  font-size: 1.2rem;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  border-radius: 5px;
+  box-shadow: 2px 2px 6px 0px #666;
+  cursor: pointer;
+  transition: transform 200ms ease-in-out;
+}
+
+header>#restart:hover {
+  transform: scale(1.1);
+}
+
+main {
+  width: 100%;
+  height: 100%;
+}
+
+.main-title {
+  text-align: center;
+  padding: 7rem 0 1.5rem;
+}
+
+.selections {
+  display: flex;
+  justify-content: center;
+}
+
+.selection {
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 4rem;
+  transition: transform 200ms ease-in-out;
+}
+
+.selection:not(:last-child) {
+  margin-right: 2rem;
+}
+
+.selection:hover {
+  transform: scale(1.2);
+}
+
+.versus-sign {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  transform: translateY(9vh);
+  text-align: center;
+  font-size: 3rem;
+  line-height: 100%;
+  margin-top: -6vh;
+}
+
+.results {
+  margin-top: 1rem;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  align-items: center;
+}
+
+.result-score {
+  margin-left: .1rem;
+  font-size: 2rem;
+  text-align: center;
+  color: #333;
+}
+
+.result-selection {
+  opacity: .5;
+  font-size: 2.5rem;
+}
+
+.result-selection.winner {
+  opacity: 1;
+  font-size: 3.2rem;
+}
+
+footer {
+  height: auto;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  padding: 1rem;
+  background-image: linear-gradient(90deg, #a1c4fd 0%, #c2e9fb 100%);
+  box-shadow: 0px 5px 15px 0px #666;
+  text-align: center;
+}
+
+footer > address {
+  font-style: normal;
+}
+
+address a {
+  text-decoration: none;
+  white-space: normal;
+}
